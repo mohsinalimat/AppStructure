@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKV-OO-PCM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Left MenuVC-->
+        <scene sceneID="HFY-T4-sad">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuVC" id="CKV-OO-PCM" customClass="LeftMenuVC" customModule="AppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z38-Zl-YDd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qMT-jS-7cr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="QSI-al-3fO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="3of-Xk-dM9">
+                                    <rect key="frame" x="0.0" y="44" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1R-bm-EO2">
+                                            <rect key="frame" x="16" y="90" width="343" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="87m-la-HTb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <state key="normal" title="Logout">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="logout:" destination="CKV-OO-PCM" eventType="touchUpInside" id="sR2-O0-QeK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="z1R-bm-EO2" firstAttribute="leading" secondItem="3of-Xk-dM9" secondAttribute="leading" constant="16" id="ENg-Ta-s4Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="z1R-bm-EO2" secondAttribute="trailing" constant="16" id="Jsu-v2-0qT"/>
+                                        <constraint firstAttribute="bottom" secondItem="z1R-bm-EO2" secondAttribute="bottom" constant="16" id="glv-Zp-LkO"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qMT-jS-7cr" firstAttribute="leading" secondItem="zZd-5u-eCk" secondAttribute="leading" id="JbV-oR-1mF"/>
+                            <constraint firstItem="zZd-5u-eCk" firstAttribute="bottom" secondItem="qMT-jS-7cr" secondAttribute="bottom" id="Jjl-Fl-b03"/>
+                            <constraint firstItem="zZd-5u-eCk" firstAttribute="trailing" secondItem="qMT-jS-7cr" secondAttribute="trailing" id="mg8-1d-NdF"/>
+                            <constraint firstItem="qMT-jS-7cr" firstAttribute="top" secondItem="z38-Zl-YDd" secondAttribute="top" id="o1x-og-Zu8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zZd-5u-eCk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E8q-g4-n7k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlR-Bc-UnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="211"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_AppStructure {
+  umbrella header "Pods-AppStructure-umbrella.h"
+
+  export *
+  module * { export * }
+}

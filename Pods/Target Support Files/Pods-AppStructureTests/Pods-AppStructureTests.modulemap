@@ -1,0 +1,6 @@
+framework module Pods_AppStructureTests {
+  umbrella header "Pods-AppStructureTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

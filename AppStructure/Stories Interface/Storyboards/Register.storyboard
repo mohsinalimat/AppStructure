@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-JA-5c2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RegisterVC-->
+        <scene sceneID="flR-48-PZh">
+            <objects>
+                <viewController storyboardIdentifier="RegisterVC" id="cfK-nZ-ktB" customClass="RegisterVC" customModule="AppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcf-iI-vsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-bz-WYr">
+                                <rect key="frame" x="20" y="536" width="335" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-hq-yRg">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="register:" destination="cfK-nZ-ktB" eventType="touchUpInside" id="y1x-yS-XEc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zqj-bz-WYr" secondAttribute="height" multiplier="6:1" id="t0F-CQ-AGW"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register View Controller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95d-Rs-xLM">
+                                <rect key="frame" x="16" y="233.5" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="miJ-df-UB0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q3d-gH-NTR" firstAttribute="trailing" secondItem="95d-Rs-xLM" secondAttribute="trailing" constant="16" id="HmD-4Y-uUV"/>
+                            <constraint firstItem="Zqj-bz-WYr" firstAttribute="width" secondItem="Zqj-bz-WYr" secondAttribute="height" multiplier="6:1" id="QfZ-IE-VHp"/>
+                            <constraint firstItem="95d-Rs-xLM" firstAttribute="leading" secondItem="q3d-gH-NTR" secondAttribute="leading" constant="16" id="S0I-fS-p5U"/>
+                            <constraint firstItem="95d-Rs-xLM" firstAttribute="centerY" secondItem="kcf-iI-vsd" secondAttribute="centerY" constant="-75" id="a7a-dV-OdY"/>
+                            <constraint firstItem="Zqj-bz-WYr" firstAttribute="leading" secondItem="q3d-gH-NTR" secondAttribute="leading" constant="20" id="cZq-bI-5Ed"/>
+                            <constraint firstItem="Zqj-bz-WYr" firstAttribute="width" secondItem="Zqj-bz-WYr" secondAttribute="height" multiplier="6:1" id="cuK-GJ-Z3g"/>
+                            <constraint firstItem="q3d-gH-NTR" firstAttribute="trailing" secondItem="Zqj-bz-WYr" secondAttribute="trailing" constant="20" id="doh-LP-crO"/>
+                            <constraint firstItem="q3d-gH-NTR" firstAttribute="bottom" secondItem="Zqj-bz-WYr" secondAttribute="bottom" constant="75" id="uM7-v1-2Ya"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q3d-gH-NTR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RegisterVC" id="JhX-kP-SAu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eab-SR-c7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="48.125937031484263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="itk-Fv-zFQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mqp-JA-5c2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wjy-Jw-wRJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cfK-nZ-ktB" kind="relationship" relationship="rootViewController" id="gcI-4k-RJO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rA0-y5-qel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="48"/>
+        </scene>
+    </scenes>
+</document>
