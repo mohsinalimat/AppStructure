@@ -35,6 +35,74 @@ extension UIViewController {
         }
         return base
     }
+    
+    
+    func showAlertOnTopVC(_ title: String, _ message: String) {
+        
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            
+            topController.showAlertController(buttonOK, title, message)
+        }
+    }
+    
+    
+    func showAlertWithCompletionBlock(_ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
+        self.showAlertControllerWithCompletionBlock(self, title, message, completion: completion)
+    }
+    
+    
+    func showAlertOnTopVCWithCompletionBlock(_ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
+        
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            
+            topController.showAlertControllerWithCompletionBlock(topController, title, message, completion: completion)
+        }
+        
+    }
+    
+    
+    func showAlert(_ title: String, _ message: String) {
+        
+        self.showAlertController(buttonOK, title, message)
+        
+    }
+    
+    
+    func showCancelAlert(_ title: String, _ message: String) {
+        
+        self.showAlertController(buttonCancel, title, message)
+        
+    }
+    
+    
+    fileprivate func showAlertController(_ buttonTitle: String, _ title: String, _ message: String) {
+        
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: buttonTitle, style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+    fileprivate func showAlertControllerWithCompletionBlock(_ vc: UIViewController, _ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
+        
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: buttonOK, style: UIAlertActionStyle.default,handler: completion))
+        
+        vc.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
 }
 
 
@@ -47,13 +115,11 @@ extension UIViewController: LoadAble {
     func showHud(){
  
         if ProgressHud.hud(for: view) == nil {
-            ProgressHud.showHUDAddedTo(view)
+            _ = ProgressHud.showHUDAddedTo(view)
         }
     }
 
     func hideHud() {
-        ProgressHud.hideHUDForView(view)
+        _ = ProgressHud.hideHUDForView(view)
     }
 }
-
-

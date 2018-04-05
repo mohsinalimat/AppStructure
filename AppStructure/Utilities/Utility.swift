@@ -65,14 +65,14 @@ class Utility:NSObject {
             }
             count += 1
         }
-        parentVC.presentViewController(alertController)
+        parentVC.present(alertController, animated: true, completion: nil)
         
         return alertController
     }
     
     static func openURL(_ urlString:String) -> Bool {
         
-        if urlString.length == 0 {
+        if urlString.count == 0 {
             QL1("The URL provided is empty.")
             return false
         }

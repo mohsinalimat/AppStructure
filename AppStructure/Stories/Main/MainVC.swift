@@ -30,6 +30,8 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        self.showAlert("title", "message")
     }
     
     override func didReceiveMemoryWarning() {

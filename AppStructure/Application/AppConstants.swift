@@ -13,12 +13,12 @@ import Foundation
  * General Class singleton constants
  */
 
-let appUtility   = AppUtility.sharedInstance
+//let appUtility   = AppUtility.sharedInstance
 let userDefaults = UserDefaults.standard
 let notifCenter  = NotificationCenter.default
 let application  = UIApplication.shared
 let appDelegate  = application.delegate as! AppDelegate
-let docsHelper   = DocumentsHelper.sharedInstance
+//let docsHelper   = DocumentsHelper.sharedInstance
 
 
 
