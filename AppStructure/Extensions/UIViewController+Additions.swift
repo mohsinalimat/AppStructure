@@ -8,18 +8,23 @@
 
 import UIKit
 
-protocol LoadAble {
-    func showHud()
-    func hideHud()
-}
 
 
 extension UIViewController {
 
+    
+    
+    // MARK: - Static
+    
     static func instantiate(from storyboard: UIStoryboard) -> UIViewController {
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     
+
+
+    
+    
+    // MARK: - Class Functions
 
     class func topViewController(_ base: UIViewController? = UIApplication.shared.windows.first!.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
@@ -37,71 +42,60 @@ extension UIViewController {
     }
     
     
-    func showAlertOnTopVC(_ title: String, _ message: String) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MARK: - Alert Controllers
+
+extension UIViewController {
+
+    
+    func showOKAlert(title: String, message: String, actionHandler handler:((UIAlertAction) -> Void)? = nil) {
         
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            
-            topController.showAlertController(buttonOK, title, message)
-        }
+        showAlert(title: title, message: message, actionTitle: buttonOK, actionHandler: handler)
     }
+
+
     
     
-    func showAlertWithCompletionBlock(_ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
-        self.showAlertControllerWithCompletionBlock(self, title, message, completion: completion)
+    func showAlert(title: String, message: String, actionTitle: String, actionHandler handler:((UIAlertAction) -> Void)?) {
+        
+        let action = UIAlertAction(title: actionTitle, style: UIAlertActionStyle.default, handler: handler)
+        let alert = UIAlertController.alertWith(title: title, message: message, actions: [action], style: UIAlertControllerStyle.alert)
+        present(alert, animated: true, completion: nil)
     }
+
     
     
-    func showAlertOnTopVCWithCompletionBlock(_ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
+    
+    
+    func showAlert(title: String, message: String, firstTitle: String, firstHandler:((UIAlertAction) -> Void)?, secondTitle: String, secondhandler:((UIAlertAction) -> Void)?) {
         
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            
-            topController.showAlertControllerWithCompletionBlock(topController, title, message, completion: completion)
-        }
-        
+        let action1 = UIAlertAction(title: firstTitle,  style: UIAlertActionStyle.default,  handler: firstHandler)
+        let action2 = UIAlertAction(title: secondTitle, style: UIAlertActionStyle.default, handler: secondhandler)
+
+        let alert = UIAlertController.alertWith(title: title, message: message, actions: [action1, action2], style: UIAlertControllerStyle.alert)
+        present(alert, animated: true, completion: nil)
     }
-    
-    
-    func showAlert(_ title: String, _ message: String) {
-        
-        self.showAlertController(buttonOK, title, message)
-        
-    }
-    
-    
-    func showCancelAlert(_ title: String, _ message: String) {
-        
-        self.showAlertController(buttonCancel, title, message)
-        
-    }
-    
-    
-    fileprivate func showAlertController(_ buttonTitle: String, _ title: String, _ message: String) {
-        
-        let alertController = UIAlertController(title: title, message:
-            message, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: buttonTitle, style: UIAlertActionStyle.default,handler: nil))
-        
-        self.present(alertController, animated: true, completion: nil)
-        
-    }
-    
-    
-    fileprivate func showAlertControllerWithCompletionBlock(_ vc: UIViewController, _ title: String, _ message: String, completion: ((UIAlertAction) -> Void)?) {
-        
-        let alertController = UIAlertController(title: title, message:
-            message, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: buttonOK, style: UIAlertActionStyle.default,handler: completion))
-        
-        vc.present(alertController, animated: true, completion: nil)
-        
-    }
-    
     
 }
 
@@ -109,17 +103,48 @@ extension UIViewController {
 
 
 
+
+
+
+
+
+
+
+
+
+
+// MARK: - LoadAble Protocol
+
+protocol LoadAble {
+
+    func showHud()
+    func hideHud()
+}
+
+
+
+
+
+
+
+
+
+
+
+// MARK: - Huds
 
 extension UIViewController: LoadAble {
     
     func showHud(){
- 
+        
         if ProgressHud.hud(for: view) == nil {
             _ = ProgressHud.showHUDAddedTo(view)
         }
     }
-
+    
     func hideHud() {
         _ = ProgressHud.hideHUDForView(view)
     }
 }
+
+

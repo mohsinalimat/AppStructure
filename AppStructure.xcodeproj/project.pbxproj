@@ -46,6 +46,7 @@
 		294F43F32018945B00B221E5 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F12018945B00B221E5 /* Routable.swift */; };
 		294F43F42018945B00B221E5 /* NSError+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F22018945B00B221E5 /* NSError+Additions.swift */; };
 		294F43F62018A07400B221E5 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F52018A07400B221E5 /* ProgressHud.swift */; };
+		295FFDED207781D5007ECED4 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */; };
 		29B68F831FA21B71001CEABA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B68F811FA21B71001CEABA /* MainVC.swift */; };
 		29B68F8A1FA21FFC001CEABA /* Facebook.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29B68F891FA21FFC001CEABA /* Facebook.plist */; };
 		29B6E3B81FA9D60F0081C67A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B6E3B71FA9D60F0081C67A /* RegisterVC.swift */; };
@@ -123,6 +124,7 @@
 		294F43F12018945B00B221E5 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		294F43F22018945B00B221E5 /* NSError+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Additions.swift"; sourceTree = "<group>"; };
 		294F43F52018A07400B221E5 /* ProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
+		295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		29B68F811FA21B71001CEABA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		29B68F891FA21FFC001CEABA /* Facebook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Facebook.plist; sourceTree = "<group>"; };
 		29B6E3B71FA9D60F0081C67A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				29482D112010899D00F554EF /* NSObjectProtocol+Additions.swift */,
 				29482D0F2010890900F554EF /* UIView+Addition.swift */,
 				2903AD981FA9B911004576A6 /* UIViewController+Additions.swift */,
+				295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */,
 				2903AD961FA9B8B7004576A6 /* UIStoryboard+Additions.swift */,
 				29482D1320108B2100F554EF /* UITableView+Additions.swift */,
 				294F43F22018945B00B221E5 /* NSError+Additions.swift */,
@@ -922,6 +925,7 @@
 				290B5F5B1FA059750095CEAF /* AppDelegate.swift in Sources */,
 				290B5FAB1FA05C3B0095CEAF /* User.swift in Sources */,
 				290B5F9D1FA05ABB0095CEAF /* AppTheme.swift in Sources */,
+				295FFDED207781D5007ECED4 /* UIAlertController+Additions.swift in Sources */,
 				29482D102010890900F554EF /* UIView+Addition.swift in Sources */,
 				2903AD971FA9B8B9004576A6 /* UIStoryboard+Additions.swift in Sources */,
 				290B5FBD1FA05D6E0095CEAF /* NetworkManager.swift in Sources */,

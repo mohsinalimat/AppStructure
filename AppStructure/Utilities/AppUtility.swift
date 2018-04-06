@@ -66,7 +66,6 @@ class AppUtility: NSObject {
         set {
             if _activeUser != newValue {
                 _activeUser = newValue
-                _userDefaultCreditCard = nil
             }
         }
     }
@@ -85,10 +84,10 @@ class AppUtility: NSObject {
     func logoutAppUser() {
         
         User.logoutUser()
-        docsHelper.clearAllFiles()
+//        docsHelper.clearAllFiles()
         appAuthToken = nil
         
-        showRegisterView(true)
+//        showRegisterView(true)
     }
     
 

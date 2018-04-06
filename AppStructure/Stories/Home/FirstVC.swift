@@ -72,11 +72,11 @@ class FirstVC: UIViewController {
     
     fileprivate func loadData(){
         
-        let user1: User = User(data: ["name" : "Fahid Attique","description" : "IOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS Developer"])
-        let user2: User = User(data: ["name" : "Ghulam Mujtaba","description" : "IOS Developer"])
-        let user3: User = User(data: ["name" : "Ejaz Ahmed","description" : "Android Developer"])
-        let user4: User = User(data: ["name" : "Ahsan Hameed","description" : "Android Developer"])
-        dataArray = [user1,user2,user3,user4,user1,user2,user3,user4]
+//        let user1: User = User(data: ["name" : "Fahid Attique","description" : "IOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS DeveloperIOS Developer"])
+//        let user2: User = User(data: ["name" : "Ghulam Mujtaba","description" : "IOS Developer"])
+//        let user3: User = User(data: ["name" : "Ejaz Ahmed","description" : "Android Developer"])
+//        let user4: User = User(data: ["name" : "Ahsan Hameed","description" : "Android Developer"])
+//        dataArray = [user1,user2,user3,user4,user1,user2,user3,user4]
     }
     
 

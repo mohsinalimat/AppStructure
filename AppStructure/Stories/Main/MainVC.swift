@@ -31,7 +31,30 @@ class MainVC: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        self.showAlert("title", "message")
+//        showOKAlert(title: "Hello", message:"Hello ! I am an alert controller.")
+//
+//        showOKAlert(title: "Hello", message:"Hello ! I am an alert controller.", actionHandler: { (action) in
+//
+//            self.showAlert(title: "Multiple Buttons Alert", message: "I am an alert controller with multiple buttons.", firstTitle: "First", firstHandler: { (action) in
+//
+//                QL1("firstHandler Tapped")
+//
+//            }, secondTitle: "Second") { (action) in
+//
+//                QL1("secondHandler Tapped")
+//            }
+//
+//        })
+//
+//        showAlert(title: "Multiple Buttons Alert", message: "I am an alert controller with multiple buttons.", firstTitle: "First", firstHandler: { (action) in
+//
+//            QL1("firstHandler Tapped")
+//
+//        }, secondTitle: "Second") { (action) in
+//
+//            QL1("secondHandler Tapped")
+//        }
+        
     }
     
     override func didReceiveMemoryWarning() {
