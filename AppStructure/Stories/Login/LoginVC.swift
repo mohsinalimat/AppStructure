@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 class LoginVC: UIViewController {
 
@@ -18,7 +19,9 @@ class LoginVC: UIViewController {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var passwordTextField: UITextField!
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -46,15 +49,66 @@ class LoginVC: UIViewController {
     // MARK: - Functions
     
     
+    fileprivate func validateFields() -> (Bool, String?) {
+        
+        let email = self.emailTextField.text!
+        let pass = self.passwordTextField.text!
+        
+        //        if !phoneFieldView.isValid() { return (false, messagePhoneValidationFailed)}
+        if !email.isEmail { return (false, "Please enter valid email")}
+        if pass.isEmpty { return (false, "Please enter password")}
+        return (true, nil)
+    }
+    
+    @IBAction func nextTouchUpInside(_ sender: AnyObject) {
+        
+        let (isValid, errorMessage) = validateFields()
+        
+        if (!isValid) {
+            Utility.showCancelTypeAlert("Invalid Fields", message: errorMessage, buttonTitle: buttonOK, onController: self)
+            return
+        }
+        
+    }
+    
     
     // MARK: - IBActions
     
     @IBAction func login(_ sender: Any) {
         
-        guard let panel = self.panel else { return }
         
-        let centerVC = UIStoryboard.home.instantiateInitialViewController()!
-        let leftVC  = LeftMenuVC.instantiate(from: UIStoryboard.leftMenu)
-        _ = panel.center(centerVC).left(leftVC)
+        let (isValid, errorMessage) = validateFields()
+        
+        if (!isValid) {
+            Utility.showCancelTypeAlert("Invalid Fields", message: errorMessage, buttonTitle: buttonOK, onController: self)
+            return
+        }
+        
+        
+        self.showHud()
+        let params = [
+            "email" : self.emailTextField.text!,
+            "password": self.passwordTextField.text!
+        ]
+        let userLoader = UserLoader()
+        userLoader.loginUserWith(parameters: params as [String : AnyObject], successBlock: { (user) in
+            
+            self.hideHud()
+            print(user)
+            
+            if user.saveUser() {
+                print("User saved")
+            }
+            guard let panel = self.panel else { return }
+            
+            let centerVC = UIStoryboard.home.instantiateInitialViewController()!
+            let leftVC  = LeftMenuVC.instantiate(from: UIStoryboard.leftMenu)
+            _ = panel.center(centerVC).left(leftVC)
+            
+        }) { (error) in
+            self.hideHud()
+            self.showAlert(title: String(describing: error?.code), message: (error?.localizedDescription)!, actionTitle: "OK", actionHandler: nil)
+        }
+
     }
 }

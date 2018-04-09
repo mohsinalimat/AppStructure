@@ -52,7 +52,9 @@ class LeftMenuVC: UIViewController {
     @IBAction func logout(_ sender: Any) {
         
         guard let panel = self.panel else { return }
-
+        
+        User.logoutUser()
+        
         let centerVC = UIStoryboard.main.instantiateInitialViewController()!
         _ = panel.center(centerVC, afterThat: {
             _ = panel.left(nil)

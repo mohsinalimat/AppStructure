@@ -36,29 +36,65 @@
                                     <constraint firstAttribute="width" secondItem="3fE-ew-mZC" secondAttribute="height" multiplier="6:1" id="X53-bm-eBr"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login View Controller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYg-Ez-lRh">
-                                <rect key="frame" x="16" y="233.5" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BM5-3K-M5X"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-qk-qJY">
+                                <rect key="frame" x="10" y="234" width="355" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-cc-2QV">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="26.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-xn-qa6">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt0-2l-hcd" userLabel="Line" customClass="AuthenticationSeparator" customModule="TripApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25.5" width="355" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="0HI-gz-ctU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-DC-CYf">
+                                        <rect key="frame" x="0.0" y="58.5" width="355" height="26.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-RG-IFq">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egL-f6-IW4" userLabel="Line" customClass="AuthenticationSeparator" customModule="TripApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25.5" width="355" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="dNn-ng-W79"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3fE-ew-mZC" firstAttribute="width" secondItem="3fE-ew-mZC" secondAttribute="height" multiplier="6:1" id="6zD-YX-EyX"/>
-                            <constraint firstAttribute="trailing" secondItem="oYg-Ez-lRh" secondAttribute="trailing" constant="16" id="CU0-VQ-arU"/>
                             <constraint firstItem="3fE-ew-mZC" firstAttribute="leading" secondItem="qoT-70-fnR" secondAttribute="leading" constant="20" id="LaL-fC-hcq"/>
-                            <constraint firstItem="oYg-Ez-lRh" firstAttribute="leading" secondItem="qoT-70-fnR" secondAttribute="leading" constant="16" id="QBn-AW-bxg"/>
-                            <constraint firstItem="oYg-Ez-lRh" firstAttribute="centerY" secondItem="ENd-43-bUr" secondAttribute="centerY" constant="-75" id="THH-z1-WwD"/>
                             <constraint firstItem="qoT-70-fnR" firstAttribute="trailing" secondItem="3fE-ew-mZC" secondAttribute="trailing" constant="20" id="TN4-hi-6Ba"/>
                             <constraint firstItem="qoT-70-fnR" firstAttribute="bottom" secondItem="3fE-ew-mZC" secondAttribute="bottom" constant="75" id="XoW-nH-EdZ"/>
+                            <constraint firstItem="Cbs-qk-qJY" firstAttribute="leading" secondItem="qoT-70-fnR" secondAttribute="leading" constant="10" id="eAs-SB-u2e"/>
+                            <constraint firstItem="qoT-70-fnR" firstAttribute="trailing" secondItem="Cbs-qk-qJY" secondAttribute="trailing" constant="10" id="fmq-o2-Nxb"/>
+                            <constraint firstItem="Cbs-qk-qJY" firstAttribute="top" secondItem="qoT-70-fnR" secondAttribute="top" constant="170" id="tgO-El-JWh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qoT-70-fnR"/>
                     </view>
                     <navigationItem key="navigationItem" title="LoginVC" id="csA-v0-HKQ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="8hh-xn-qa6" id="Ncx-oG-Dgb"/>
+                        <outlet property="passwordTextField" destination="KeR-RG-IFq" id="NtV-Jy-KJ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05w-3B-PxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

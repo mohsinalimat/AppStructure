@@ -26,7 +26,7 @@ target 'AppStructure' do
     pod 'ActionSheetPicker-3.0'
     pod 'DZNEmptyDataSet'
     pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4'
-
+    pod 'SwifterSwift'
 
 
     pod 'Fabric'

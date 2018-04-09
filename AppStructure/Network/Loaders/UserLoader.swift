@@ -24,6 +24,24 @@ class UserLoader {
     
     // MARK: - API Call Methods related to User
 
+    
+    func loginUserWith(parameters: [String: AnyObject], successBlock success: @escaping ((_ user: User) -> Void), failureBlock failure: @escaping ((_ error: NSError?) -> Void)) {
+        
+        let service = Endpoint.login
+        _ = manager.request(.post, service: service, parameters: parameters, authorized: false, success: { (response, json) in
+            
+            guard let dataInfo = json.data as? [String : Any] else {
+                failure(NSError(errorMessage: "Data key is not coming from server"))
+                return
+            }
+            
+            let user = Mapper<User>().map(JSONObject: dataInfo)
+            success(user!)
+            
+        }, failure: failure)
+    }
+    
+    
     func getCountriesList(successBlock success: @escaping ((_ countryList:[Country]) -> Void), failureBlock failure: @escaping ((_ error: NSError?) -> Void)) {
         
         let service = Endpoint.countryList

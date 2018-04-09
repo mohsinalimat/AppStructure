@@ -18,6 +18,7 @@ enum Endpoint: Directable {
     
     // MARK: - Endpoints
     
+    case login
     case countryList
     
     
@@ -31,6 +32,9 @@ enum Endpoint: Directable {
         var servicePath = ""
         
         switch (self) {
+            
+        case .login:
+            servicePath = "user/login"
             
         case .countryList:
             servicePath = "get-countries-data"
