@@ -42,6 +42,65 @@ extension UIViewController {
     }
     
     
+    
+    func endEditing() {
+        view.endEditing(true)
+    }
+    
+    
+    
+    fileprivate func dismissPresentedController() {
+        self.dismiss(animated: true, completion: { () -> Void in
+            QL2("\(String(describing: type(of: self))) is dismiss.")
+        })
+    }
+    
+    fileprivate func dismissPushedController() {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+    
+    func presentViewController(_ viewControllerToPresent: UIViewController) {
+        self.presentViewController(viewControllerToPresent, animated: true)
+    }
+    
+    func presentViewController(_ viewControllerToPresent: UIViewController, animated flag: Bool) {
+        self.present(viewControllerToPresent, animated: flag) { () -> Void in
+            QL2("\(String(describing: type(of: viewControllerToPresent))) is presented.")
+        }
+    }
+    
+    func dismissViewController(_ completion: (() -> Void)? = nil) {
+        dismiss(animated: true, completion: completion)
+    }
+    
+    @objc func dismissMe() {
+        if let navigationViewController = self.navigationController {
+            
+            if (navigationViewController.viewControllers.count > 1) {
+                dismissPushedController()
+            } else {
+                dismissPresentedController()
+            }
+            
+        } else {
+            dismissPresentedController()
+        }
+    }
+    
+    
+    @IBAction func dismiss(_ sender: UIButton) {
+        endEditing()
+        dismissMe()
+    }
+    
+    func addCancelButton() {
+        
+        let cancelButton = UIBarButtonItem(image: #imageLiteral(resourceName: "back"), style: .plain, target: self, action: #selector(dismissMe))
+        navigationItem.leftBarButtonItem = cancelButton
+        
+    }
+
+    
 }
 
 

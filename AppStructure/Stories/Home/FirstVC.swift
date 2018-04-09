@@ -98,7 +98,7 @@ extension FirstVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell: SampleCell = tableView.dequeue(SampleCell.self) else { return UITableViewCell() }
+        guard let cell: SampleCell = tableView.dequeue(cell: SampleCell.self) else { return UITableViewCell() }
         cell.configureCell(user: dataArray[indexPath.row])
         return cell
     }

@@ -38,7 +38,6 @@
 		2938E6812076286100D07234 /* DocumentsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938E67F2076286000D07234 /* DocumentsHelper.swift */; };
 		29482D102010890900F554EF /* UIView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29482D0F2010890900F554EF /* UIView+Addition.swift */; };
 		29482D122010899D00F554EF /* NSObjectProtocol+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29482D112010899D00F554EF /* NSObjectProtocol+Additions.swift */; };
-		29482D1420108B2100F554EF /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29482D1320108B2100F554EF /* UITableView+Additions.swift */; };
 		294F43DF2018703C00B221E5 /* CountryPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43DE2018703C00B221E5 /* CountryPickerVC.swift */; };
 		294F43E5201874F400B221E5 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43E3201874F400B221E5 /* CountryCell.swift */; };
 		294F43E6201874F400B221E5 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294F43E4201874F400B221E5 /* CountryCell.xib */; };
@@ -46,6 +45,26 @@
 		294F43F32018945B00B221E5 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F12018945B00B221E5 /* Routable.swift */; };
 		294F43F42018945B00B221E5 /* NSError+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F22018945B00B221E5 /* NSError+Additions.swift */; };
 		294F43F62018A07400B221E5 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294F43F52018A07400B221E5 /* ProgressHud.swift */; };
+		295BC386207B988600CFFBB4 /* ABWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC384207B988600CFFBB4 /* ABWebViewController.swift */; };
+		295BC387207B988600CFFBB4 /* ABWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295BC385207B988600CFFBB4 /* ABWebViewController.xib */; };
+		295BC395207B98B500CFFBB4 /* ActionSheetPickerUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC389207B98B400CFFBB4 /* ActionSheetPickerUpgrade.swift */; };
+		295BC396207B98B500CFFBB4 /* FABKCardExpiryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC38B207B98B400CFFBB4 /* FABKCardExpiryField.swift */; };
+		295BC397207B98B500CFFBB4 /* ABCardCvvField.m in Sources */ = {isa = PBXBuildFile; fileRef = 295BC38D207B98B400CFFBB4 /* ABCardCvvField.m */; };
+		295BC398207B98B500CFFBB4 /* FABKCardNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC38F207B98B400CFFBB4 /* FABKCardNumberField.swift */; };
+		295BC399207B98B500CFFBB4 /* FAABCardCvvField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC390207B98B400CFFBB4 /* FAABCardCvvField.swift */; };
+		295BC39A207B98B500CFFBB4 /* BackgroundTaskHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC392207B98B400CFFBB4 /* BackgroundTaskHandler.swift */; };
+		295BC39B207B98B500CFFBB4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC394207B98B500CFFBB4 /* PhotoPicker.swift */; };
+		295BC3A0207B98BE00CFFBB4 /* FAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC39D207B98BE00CFFBB4 /* FAButton.swift */; };
+		295BC3A1207B98BE00CFFBB4 /* FATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC39E207B98BE00CFFBB4 /* FATextField.swift */; };
+		295BC3A2207B98BE00CFFBB4 /* FAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC39F207B98BE00CFFBB4 /* FAView.swift */; };
+		295BC3A4207B99B200CFFBB4 /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3A3207B99B100CFFBB4 /* UITextField+Additions.swift */; };
+		295BC3A9207B99ED00CFFBB4 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3A5207B99EC00CFFBB4 /* String+Additions.swift */; };
+		295BC3AA207B99ED00CFFBB4 /* NSArray+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3A6207B99EC00CFFBB4 /* NSArray+Additions.swift */; };
+		295BC3AB207B99ED00CFFBB4 /* DataType+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3A7207B99ED00CFFBB4 /* DataType+Currency.swift */; };
+		295BC3AC207B99ED00CFFBB4 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3A8207B99ED00CFFBB4 /* Date+Additions.swift */; };
+		295BC3B0207B99F500CFFBB4 /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3AD207B99F400CFFBB4 /* UITableView+Additions.swift */; };
+		295BC3B1207B99F500CFFBB4 /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3AE207B99F500CFFBB4 /* UICollectionView+Additions.swift */; };
+		295BC3B2207B99F500CFFBB4 /* UIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BC3AF207B99F500CFFBB4 /* UIScrollView+Additions.swift */; };
 		295FFDED207781D5007ECED4 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */; };
 		29B68F831FA21B71001CEABA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B68F811FA21B71001CEABA /* MainVC.swift */; };
 		29B68F8A1FA21FFC001CEABA /* Facebook.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29B68F891FA21FFC001CEABA /* Facebook.plist */; };
@@ -116,7 +135,6 @@
 		2938E67F2076286000D07234 /* DocumentsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsHelper.swift; sourceTree = "<group>"; };
 		29482D0F2010890900F554EF /* UIView+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Addition.swift"; sourceTree = "<group>"; };
 		29482D112010899D00F554EF /* NSObjectProtocol+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol+Additions.swift"; sourceTree = "<group>"; };
-		29482D1320108B2100F554EF /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
 		294F43DE2018703C00B221E5 /* CountryPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerVC.swift; sourceTree = "<group>"; };
 		294F43E3201874F400B221E5 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		294F43E4201874F400B221E5 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
@@ -124,6 +142,27 @@
 		294F43F12018945B00B221E5 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		294F43F22018945B00B221E5 /* NSError+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Additions.swift"; sourceTree = "<group>"; };
 		294F43F52018A07400B221E5 /* ProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
+		295BC384207B988600CFFBB4 /* ABWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABWebViewController.swift; sourceTree = "<group>"; };
+		295BC385207B988600CFFBB4 /* ABWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABWebViewController.xib; sourceTree = "<group>"; };
+		295BC389207B98B400CFFBB4 /* ActionSheetPickerUpgrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetPickerUpgrade.swift; sourceTree = "<group>"; };
+		295BC38B207B98B400CFFBB4 /* FABKCardExpiryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FABKCardExpiryField.swift; sourceTree = "<group>"; };
+		295BC38D207B98B400CFFBB4 /* ABCardCvvField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCardCvvField.m; sourceTree = "<group>"; };
+		295BC38E207B98B400CFFBB4 /* ABCardCvvField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCardCvvField.h; sourceTree = "<group>"; };
+		295BC38F207B98B400CFFBB4 /* FABKCardNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FABKCardNumberField.swift; sourceTree = "<group>"; };
+		295BC390207B98B400CFFBB4 /* FAABCardCvvField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAABCardCvvField.swift; sourceTree = "<group>"; };
+		295BC392207B98B400CFFBB4 /* BackgroundTaskHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTaskHandler.swift; sourceTree = "<group>"; };
+		295BC394207B98B500CFFBB4 /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		295BC39D207B98BE00CFFBB4 /* FAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAButton.swift; sourceTree = "<group>"; };
+		295BC39E207B98BE00CFFBB4 /* FATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FATextField.swift; sourceTree = "<group>"; };
+		295BC39F207B98BE00CFFBB4 /* FAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAView.swift; sourceTree = "<group>"; };
+		295BC3A3207B99B100CFFBB4 /* UITextField+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
+		295BC3A5207B99EC00CFFBB4 /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		295BC3A6207B99EC00CFFBB4 /* NSArray+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+Additions.swift"; sourceTree = "<group>"; };
+		295BC3A7207B99ED00CFFBB4 /* DataType+Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataType+Currency.swift"; sourceTree = "<group>"; };
+		295BC3A8207B99ED00CFFBB4 /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		295BC3AD207B99F400CFFBB4 /* UITableView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Additions.swift"; path = "../../../../Downloads/Libraries For Appstructure/Extensions/UITableView+Additions.swift"; sourceTree = "<group>"; };
+		295BC3AE207B99F500CFFBB4 /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		295BC3AF207B99F500CFFBB4 /* UIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Additions.swift"; sourceTree = "<group>"; };
 		295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		29B68F811FA21B71001CEABA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		29B68F891FA21FFC001CEABA /* Facebook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Facebook.plist; sourceTree = "<group>"; };
@@ -283,13 +322,20 @@
 		290B5F8B1FA059AD0095CEAF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				295BC3AE207B99F500CFFBB4 /* UICollectionView+Additions.swift */,
+				295BC3AF207B99F500CFFBB4 /* UIScrollView+Additions.swift */,
+				295BC3AD207B99F400CFFBB4 /* UITableView+Additions.swift */,
+				295BC3A7207B99ED00CFFBB4 /* DataType+Currency.swift */,
+				295BC3A8207B99ED00CFFBB4 /* Date+Additions.swift */,
+				295BC3A6207B99EC00CFFBB4 /* NSArray+Additions.swift */,
+				295BC3A5207B99EC00CFFBB4 /* String+Additions.swift */,
+				295BC3A3207B99B100CFFBB4 /* UITextField+Additions.swift */,
 				29482D112010899D00F554EF /* NSObjectProtocol+Additions.swift */,
 				29482D0F2010890900F554EF /* UIView+Addition.swift */,
 				2903AD981FA9B911004576A6 /* UIViewController+Additions.swift */,
 				295FFDEC207781D5007ECED4 /* UIAlertController+Additions.swift */,
-				2903AD961FA9B8B7004576A6 /* UIStoryboard+Additions.swift */,
-				29482D1320108B2100F554EF /* UITableView+Additions.swift */,
 				294F43F22018945B00B221E5 /* NSError+Additions.swift */,
+				2903AD961FA9B8B7004576A6 /* UIStoryboard+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,6 +404,12 @@
 		290B5FA31FA05B6B0095CEAF /* Internal (Your Own) */ = {
 			isa = PBXGroup;
 			children = (
+				295BC39C207B98BE00CFFBB4 /* Designables */,
+				295BC388207B98B400CFFBB4 /* ActionSheetPickerUpgrade */,
+				295BC391207B98B400CFFBB4 /* BackgroundTaskHandler */,
+				295BC393207B98B500CFFBB4 /* PhotoPicker */,
+				295BC38A207B98B400CFFBB4 /* Stripe */,
+				295BC383207B988600CFFBB4 /* ABWebView */,
 				294F43F72018A07900B221E5 /* Huds */,
 				29B6E3BD1FA9DCF10081C67A /* LeftMenuNavigationVC */,
 				290B5FA81FA05BE60095CEAF /* FALocationManager */,
@@ -499,6 +551,70 @@
 				294F43F52018A07400B221E5 /* ProgressHud.swift */,
 			);
 			path = Huds;
+			sourceTree = "<group>";
+		};
+		295BC383207B988600CFFBB4 /* ABWebView */ = {
+			isa = PBXGroup;
+			children = (
+				295BC384207B988600CFFBB4 /* ABWebViewController.swift */,
+				295BC385207B988600CFFBB4 /* ABWebViewController.xib */,
+			);
+			path = ABWebView;
+			sourceTree = "<group>";
+		};
+		295BC388207B98B400CFFBB4 /* ActionSheetPickerUpgrade */ = {
+			isa = PBXGroup;
+			children = (
+				295BC389207B98B400CFFBB4 /* ActionSheetPickerUpgrade.swift */,
+			);
+			path = ActionSheetPickerUpgrade;
+			sourceTree = "<group>";
+		};
+		295BC38A207B98B400CFFBB4 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				295BC38B207B98B400CFFBB4 /* FABKCardExpiryField.swift */,
+				295BC38C207B98B400CFFBB4 /* ABCardCvvField */,
+				295BC38F207B98B400CFFBB4 /* FABKCardNumberField.swift */,
+				295BC390207B98B400CFFBB4 /* FAABCardCvvField.swift */,
+			);
+			path = Stripe;
+			sourceTree = "<group>";
+		};
+		295BC38C207B98B400CFFBB4 /* ABCardCvvField */ = {
+			isa = PBXGroup;
+			children = (
+				295BC38D207B98B400CFFBB4 /* ABCardCvvField.m */,
+				295BC38E207B98B400CFFBB4 /* ABCardCvvField.h */,
+			);
+			path = ABCardCvvField;
+			sourceTree = "<group>";
+		};
+		295BC391207B98B400CFFBB4 /* BackgroundTaskHandler */ = {
+			isa = PBXGroup;
+			children = (
+				295BC392207B98B400CFFBB4 /* BackgroundTaskHandler.swift */,
+			);
+			path = BackgroundTaskHandler;
+			sourceTree = "<group>";
+		};
+		295BC393207B98B500CFFBB4 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				295BC394207B98B500CFFBB4 /* PhotoPicker.swift */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		295BC39C207B98BE00CFFBB4 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				295BC39D207B98BE00CFFBB4 /* FAButton.swift */,
+				295BC39E207B98BE00CFFBB4 /* FATextField.swift */,
+				295BC39F207B98BE00CFFBB4 /* FAView.swift */,
+			);
+			name = Designables;
+			path = "../../../../../Downloads/Libraries For Appstructure/Designables";
 			sourceTree = "<group>";
 		};
 		29B68F7D1FA21A71001CEABA /* Storyboards */ = {
@@ -701,6 +817,7 @@
 				290B5FD31FA05EEE0095CEAF /* Main.storyboard in Resources */,
 				01255FDA1FE7C95A00766360 /* SampleCell.xib in Resources */,
 				290B5FCE1FA05EB30095CEAF /* Login.storyboard in Resources */,
+				295BC387207B988600CFFBB4 /* ABWebViewController.xib in Resources */,
 				29B6E3C11FA9E6270081C67A /* LeftMenu.storyboard in Resources */,
 				2903AD941FA9B4BE004576A6 /* Podfile in Resources */,
 				2903AD951FA9B4C0004576A6 /* Info.plist in Resources */,
@@ -866,6 +983,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/BKMoneyKit/BKMoneyKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/FAPanels/FAPanels.framework",
@@ -874,7 +992,7 @@
 				"${BUILT_PRODUCTS_DIR}/QorumLogs/QorumLogs.framework",
 				"${BUILT_PRODUCTS_DIR}/RNNotificationView/RNNotificationView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 			);
@@ -884,6 +1002,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BKMoneyKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAPanels.framework",
@@ -892,7 +1011,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QorumLogs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNNotificationView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 			);
@@ -911,6 +1030,7 @@
 				01255FD01FE7C78D00766360 /* FirstVC.swift in Sources */,
 				294F43F32018945B00B221E5 /* Routable.swift in Sources */,
 				2938E6812076286100D07234 /* DocumentsHelper.swift in Sources */,
+				295BC396207B98B500CFFBB4 /* FABKCardExpiryField.swift in Sources */,
 				29B68F831FA21B71001CEABA /* MainVC.swift in Sources */,
 				294F43F62018A07400B221E5 /* ProgressHud.swift in Sources */,
 				290B5FC11FA05DAE0095CEAF /* UserLoader.swift in Sources */,
@@ -920,27 +1040,44 @@
 				2903AD9A1FA9B919004576A6 /* UIViewController+Additions.swift in Sources */,
 				290B5FAD1FA05C4E0095CEAF /* Country.swift in Sources */,
 				290B5F9F1FA05ADE0095CEAF /* AppStatusCodes.swift in Sources */,
+				295BC397207B98B500CFFBB4 /* ABCardCvvField.m in Sources */,
 				294F43DF2018703C00B221E5 /* CountryPickerVC.swift in Sources */,
-				29482D1420108B2100F554EF /* UITableView+Additions.swift in Sources */,
+				295BC3B0207B99F500CFFBB4 /* UITableView+Additions.swift in Sources */,
 				290B5FBF1FA05D950095CEAF /* BackgroundServiceManager.swift in Sources */,
 				2938E6802076286100D07234 /* AppUtility.swift in Sources */,
 				290B5F5B1FA059750095CEAF /* AppDelegate.swift in Sources */,
+				295BC3A1207B98BE00CFFBB4 /* FATextField.swift in Sources */,
 				290B5FAB1FA05C3B0095CEAF /* User.swift in Sources */,
+				295BC3A2207B98BE00CFFBB4 /* FAView.swift in Sources */,
 				290B5F9D1FA05ABB0095CEAF /* AppTheme.swift in Sources */,
 				295FFDED207781D5007ECED4 /* UIAlertController+Additions.swift in Sources */,
 				29482D102010890900F554EF /* UIView+Addition.swift in Sources */,
+				295BC3AA207B99ED00CFFBB4 /* NSArray+Additions.swift in Sources */,
+				295BC395207B98B500CFFBB4 /* ActionSheetPickerUpgrade.swift in Sources */,
 				2903AD971FA9B8B9004576A6 /* UIStoryboard+Additions.swift in Sources */,
 				290B5FBD1FA05D6E0095CEAF /* NetworkManager.swift in Sources */,
 				294F43E5201874F400B221E5 /* CountryCell.swift in Sources */,
+				295BC398207B98B500CFFBB4 /* FABKCardNumberField.swift in Sources */,
 				29B6E3BF1FA9DD190081C67A /* LeftMenuNavigationVC.swift in Sources */,
 				29B6E3B81FA9D60F0081C67A /* RegisterVC.swift in Sources */,
 				29B6E3C51FA9E82B0081C67A /* LeftMenuVC.swift in Sources */,
+				295BC39A207B98B500CFFBB4 /* BackgroundTaskHandler.swift in Sources */,
+				295BC3A0207B98BE00CFFBB4 /* FAButton.swift in Sources */,
+				295BC3B2207B99F500CFFBB4 /* UIScrollView+Additions.swift in Sources */,
+				295BC3AB207B99ED00CFFBB4 /* DataType+Currency.swift in Sources */,
 				294F43F42018945B00B221E5 /* NSError+Additions.swift in Sources */,
+				295BC39B207B98B500CFFBB4 /* PhotoPicker.swift in Sources */,
 				29C2C9142018A1BE00F54142 /* Utility.swift in Sources */,
+				295BC3AC207B99ED00CFFBB4 /* Date+Additions.swift in Sources */,
+				295BC3A9207B99ED00CFFBB4 /* String+Additions.swift in Sources */,
 				290B5F991FA05AA00095CEAF /* AppConfigs.swift in Sources */,
+				295BC386207B988600CFFBB4 /* ABWebViewController.swift in Sources */,
 				29482D122010899D00F554EF /* NSObjectProtocol+Additions.swift in Sources */,
 				29B6E3BA1FA9D74F0081C67A /* HomeVC.swift in Sources */,
+				295BC3A4207B99B200CFFBB4 /* UITextField+Additions.swift in Sources */,
+				295BC399207B98B500CFFBB4 /* FAABCardCvvField.swift in Sources */,
 				290B5F971FA05A8D0095CEAF /* AppConstants.swift in Sources */,
+				295BC3B1207B99F500CFFBB4 /* UICollectionView+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

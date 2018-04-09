@@ -84,7 +84,6 @@ class AppUtility: NSObject {
     func logoutAppUser() {
         
         User.logoutUser()
-//        docsHelper.clearAllFiles()
         appAuthToken = nil
         
 //        showRegisterView(true)

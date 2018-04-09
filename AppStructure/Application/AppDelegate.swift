@@ -70,26 +70,20 @@ extension AppDelegate {
     func configureRootVC() {
         
         let panelVC = FAPanelController()
-        
+        panelVC.configs.centerPanelTransitionType = .crossDissolve
+        panelVC.leftPanelPosition = .front
+
         if let _ = appUtility.activeUser {
             
-            panelVC.configs.centerPanelTransitionType = .crossDissolve
             let centerVC = UIStoryboard.home.instantiateInitialViewController()!
             let leftVC  = LeftMenuVC.instantiate(from: UIStoryboard.leftMenu)
             _ = panelVC.center(centerVC).left(leftVC)
-            
         }
         else {
-            
-            panelVC.configs.centerPanelTransitionType = .crossDissolve
-            panelVC.leftPanelPosition = .front
             _ = panelVC.center(UIStoryboard.main.instantiateInitialViewController()!)
-            
         }
         
         window?.rootViewController = panelVC
-        
-        
     }
 
     

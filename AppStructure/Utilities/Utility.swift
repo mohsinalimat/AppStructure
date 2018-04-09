@@ -107,32 +107,6 @@ class Utility:NSObject {
 
 
 
-// MARK:- General functions
-
-func isEmpty(_ text:String?) -> Bool
-{
-    if text == nil {return true}
-    if text!.isEmpty == true {return true}
-    return false
-}
-
-func isEmail(_ text:String?) -> Bool
-{
-    let EMAIL_REGEX = "^([^@\\s]+)@((?:[-a-z0-9]+\\.)+[a-z]{2,})$"
-    let predicate = NSPredicate(format: "SELF MATCHES %@", EMAIL_REGEX)
-    return predicate.evaluate(with: text)
-}
-
-func className(_ name:AnyClass) -> String {
-    return name.self.description().components(separatedBy: ".").last!
-}
-
-
-
-
-
-
-
 
 
 

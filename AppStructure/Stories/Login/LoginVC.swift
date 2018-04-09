@@ -7,21 +7,38 @@
 //
 
 import UIKit
-import SwifterSwift
 
 class LoginVC: UIViewController {
 
+
+    
     // MARK: - Static
+    
+    
+    
+    
     
     
     // MARK: - Class Properties
     
     
+    
+    
+    
+    
+    
     // MARK: - IBOutlets
     
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailTextField: FATextField!
+    @IBOutlet weak var passwordTextField: FATextField!
     
-    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    
+    
+    
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -37,6 +54,11 @@ class LoginVC: UIViewController {
     
     
     
+    
+    
+    
+    
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -44,6 +66,12 @@ class LoginVC: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    
+    
+    
+    
+    
+    
     
     
     // MARK: - Functions
@@ -55,7 +83,7 @@ class LoginVC: UIViewController {
         let pass = self.passwordTextField.text!
         
         //        if !phoneFieldView.isValid() { return (false, messagePhoneValidationFailed)}
-        if !email.isEmail { return (false, "Please enter valid email")}
+        if !email.isEmail() { return (false, "Please enter valid email")}
         if pass.isEmpty { return (false, "Please enter password")}
         return (true, nil)
     }

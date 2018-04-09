@@ -6,6 +6,7 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - BKMoneyKit (0.0.12)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -19,21 +20,7 @@ PODS:
   - QorumLogs (0.9)
   - RNNotificationView (3.0.0)
   - SnapKit (4.0.0)
-  - SwifterSwift (4.2.0):
-    - SwifterSwift/AppKit (= 4.2.0)
-    - SwifterSwift/CoreGraphics (= 4.2.0)
-    - SwifterSwift/CoreLocation (= 4.2.0)
-    - SwifterSwift/Foundation (= 4.2.0)
-    - SwifterSwift/MapKit (= 4.2.0)
-    - SwifterSwift/SwiftStdlib (= 4.2.0)
-    - SwifterSwift/UIKit (= 4.2.0)
-  - SwifterSwift/AppKit (4.2.0)
-  - SwifterSwift/CoreGraphics (4.2.0)
-  - SwifterSwift/CoreLocation (4.2.0)
-  - SwifterSwift/Foundation (4.2.0)
-  - SwifterSwift/MapKit (4.2.0)
-  - SwifterSwift/SwiftStdlib (4.2.0)
-  - SwifterSwift/UIKit (4.2.0)
+  - Stripe (12.1.1)
   - TPKeyboardAvoiding (1.3.2)
   - TTTAttributedLabel (2.0.0)
 
@@ -42,6 +29,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - AlamofireObjectMapper
+  - BKMoneyKit
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, branch `wip/swift4`)
   - Crashlytics
   - DZNEmptyDataSet
@@ -52,7 +40,7 @@ DEPENDENCIES:
   - QorumLogs
   - RNNotificationView
   - SnapKit
-  - SwifterSwift
+  - Stripe (~> 12.1)
   - TPKeyboardAvoiding
   - TTTAttributedLabel
 
@@ -71,6 +59,7 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  BKMoneyKit: 1e075497e9b6d9c3ba37c646dcf647ca6358ec43
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -81,10 +70,10 @@ SPEC CHECKSUMS:
   QorumLogs: 9a484df6973a3697ac79fe2273140fde6b36dccc
   RNNotificationView: c1fd881d47d1f2af126d01a1a117f8d498f39637
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwifterSwift: 1d101dcfb0c3123226900f3b4d220d57fb60d546
+  Stripe: f8e8feff38ba5caf7b2568c64eab96b0440ecb95
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 76d7eb9e40b320969eeeadfd22693f858e6e009f
+PODFILE CHECKSUM: 644a08130d8709cba0f051fd86a1ad31b9eb1556
 
 COCOAPODS: 1.3.1

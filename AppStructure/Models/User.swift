@@ -117,8 +117,8 @@ class User:NSObject,NSCoding, Mappable {
         
         var names = [String]()
         
-        if !isEmpty(firstName) { names.append(firstName)}
-        if !isEmpty(lastName) { names.append(lastName)}
+        if !firstName.isEmpty { names.append(firstName)}
+        if !lastName.isEmpty { names.append(lastName)}
         
         if names.count > 0 { return names.joined(separator: " ")}
         else {
@@ -131,7 +131,7 @@ class User:NSObject,NSCoding, Mappable {
     
     var userImageURL: URL? {
         
-        if !isEmpty(userImageName), let url = URL(string: userImageName) { return url }
+        if !userImageName.isEmpty, let url = URL(string: userImageName) { return url }
         return nil
     }
     

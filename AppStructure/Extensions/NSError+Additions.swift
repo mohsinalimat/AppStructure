@@ -25,5 +25,4 @@ public extension NSError {
         
         self.init(domain: appDomain, code: errorCode, userInfo: [NSLocalizedDescriptionKey: errorMessage!])
     }
-    
 }

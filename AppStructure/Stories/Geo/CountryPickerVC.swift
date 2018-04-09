@@ -97,7 +97,7 @@ extension CountryPickerVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell: CountryCell = tableView.dequeue(CountryCell.self) else { return UITableViewCell() }
+        guard let cell: CountryCell = tableView.dequeue(cell: CountryCell.self) else { return UITableViewCell() }
         return cell
     }
     
